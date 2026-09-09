@@ -1,18 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: qa-portal-generik
+  name: proyek-pancaran
+  description: Komponen pertama saya dengan TechDocs
   annotations:
-    backstage.io/techdocs-ref: dir.
-  description: The place to be, for great artists
+    # Menunjuk ke direktori tempat mkdocs.yml berada
+    backstage.io/techdocs-ref: dir:. 
 spec:
-  type: website
-  lifecycle: production
-  owner: artist-relations-team
-  system: artist-engagement-portal
-  dependsOn:
-    - resource:default/artists-db
-  dependencyOf:
-    - component:default/artist-web-lookup
-  providesApis:
-    - artist-api
+  type: service
+  lifecycle: experimental
+  owner: guests
