@@ -1,1 +1,5 @@
-
+site_name: Dokumentasi Proyek Pancaran
+nav:
+  - Pendahuluan: index.md
+plugins:
+  - techdocs-core
